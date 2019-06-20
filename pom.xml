@@ -19,6 +19,7 @@
 
   <modules>
     <module>iot-access-proxy</module>
+    <module>iot-access-common</module>
   </modules>
 
   <properties>
