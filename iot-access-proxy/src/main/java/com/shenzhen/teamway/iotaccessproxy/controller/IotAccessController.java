@@ -21,7 +21,6 @@ public class IotAccessController {
     private String urlRest = "http://192.168.0.127:8080/";
 
     //=================================出入口管理===============================
-
     //显示各出入口人员进出统计信息的接口
     @PostMapping("/getCountPersonOfChannel")
     @ResponseBody
@@ -77,6 +76,7 @@ public class IotAccessController {
 
 
     //=================================门禁管理===============================
+
     //显示各房间人员进出统计信息
     @PostMapping("/getCountPersonOfDoor")
     @ResponseBody
