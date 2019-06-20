@@ -15,6 +15,7 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 public class ConfigOfUtil {
 
+    //使用restTemplate进行远程连接
     @Bean
     public RestTemplate restTemplate() {
         HttpComponentsClientHttpRequestFactory httpRequestFactory = new HttpComponentsClientHttpRequestFactory();
