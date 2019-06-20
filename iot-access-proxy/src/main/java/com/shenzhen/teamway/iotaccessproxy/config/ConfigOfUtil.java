@@ -22,6 +22,7 @@ public class ConfigOfUtil {
         httpRequestFactory.setConnectionRequestTimeout(30 * 1000);
         httpRequestFactory.setConnectTimeout(30 * 3000);
         httpRequestFactory.setReadTimeout(30 * 3000);
+        System.out.println("ss");
         return new RestTemplate(httpRequestFactory);
     }
 
