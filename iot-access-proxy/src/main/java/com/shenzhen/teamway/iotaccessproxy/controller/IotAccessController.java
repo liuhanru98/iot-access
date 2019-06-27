@@ -132,7 +132,6 @@ public class IotAccessController {
         return  result;
     }
 
-
     //能显示门禁事件
     @RequestMapping("/getDoorRealTimeStatus")
     @ResponseBody
