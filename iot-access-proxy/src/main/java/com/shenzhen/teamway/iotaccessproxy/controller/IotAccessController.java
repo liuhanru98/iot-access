@@ -107,7 +107,7 @@ public class IotAccessController {
        return personInfoOfImportantDoor;
    }
 
-   //
+   //显示门禁状态
     @PostMapping("/getOneDoorStatus")
     @ResponseBody
     public String getOneDoorStatus(String door, Integer channelIndex){
@@ -118,7 +118,7 @@ public class IotAccessController {
         return oneDoorStatus;
     }
 
-    //
+    //控制门禁，开门、关门、常开、常闭
     @PostMapping("/updateOneDoorStatus")
     @ResponseBody
     public Integer updateOneDoorStatus(String door, Integer channelIndex, String deviceStatus){
@@ -132,6 +132,7 @@ public class IotAccessController {
         return  result;
     }
 
+    //能显示门禁事件
     @RequestMapping("/getDoorRealTimeStatus")
     @ResponseBody
     public String getDoorRealTimeStatus(){
